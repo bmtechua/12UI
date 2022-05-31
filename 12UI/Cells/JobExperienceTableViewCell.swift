@@ -9,9 +9,16 @@ import UIKit
 
 class JobExperienceTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var jobExperienceImageView: UIImageView!
+    
+    @IBOutlet weak var jobExperienceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        jobExperienceLabel.text = jobexperience
+        
+        jobExperienceImageView.image = UIImage(named: "image 1")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

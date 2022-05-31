@@ -9,10 +9,18 @@ import UIKit
 
 class UserImageTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var testuserImageView: UIImageView!
+    
+    @IBOutlet weak var testuserLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+     
+        testuserLabel.text = name
+        testuserImageView.image = UIImage(named: "icon.myimg")
+        
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

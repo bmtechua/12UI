@@ -1,5 +1,5 @@
 //
-//  ExperienceTableViewCell.swift
+//  RateTableViewCell.swift
 //  12UI
 //
 //  Created by bmtech on 26.05.2022.
@@ -9,6 +9,10 @@ import UIKit
 
 class ExperienceTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var yearExperienceLabel: UILabel!
+    @IBOutlet weak var companyExperienceLabel: UILabel!
+    @IBOutlet weak var descriptionExperienceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

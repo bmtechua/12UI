@@ -9,9 +9,15 @@ import UIKit
 
 class SkillsTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var skillsImageView: UIImageView!
+    @IBOutlet weak var skillsLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        skillsLabel.text = skillslabel
+        
+        skillsImageView.image = UIImage(named: "icon.skills")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
